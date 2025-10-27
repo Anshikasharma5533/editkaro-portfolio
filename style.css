@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #0f0f0f;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: #111;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+.logo span {
+  color: #ff4b2b;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav li {
+  margin: 0 15px;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+nav a:hover,
+nav a.active {
+  color: #ff4b2b;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+  background: linear-gradient(135deg, #1a1a1a, #202020);
+}
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+.hero p {
+  color: #ccc;
+  max-width: 600px;
+  margin: 0 auto 25px;
+}
+.hero .btn {
+  background: #ff4b2b;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.hero .btn:hover {
+  background: #ff6f3c;
+}
+
+/* Portfolio */
+.portfolio {
+  padding: 80px 50px;
+  text-align: center;
+}
+.filter-buttons {
+  margin-bottom: 30px;
+}
+.filter-btn {
+  background: #333;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.filter-btn.active,
+.filter-btn:hover {
+  background: #ff4b2b;
+}
+
+.video-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+.video-card {
+  background: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.video-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(255, 75, 43, 0.3);
+}
+.video-card video {
+  width: 100%;
+  border-bottom: 2px solid #ff4b2b;
+}
+.video-card h3 {
+  padding: 10px;
+}
+
+/* About */
+.about {
+  background: #111;
+  padding: 80px 40px;
+  text-align: center;
+}
+.about h2 {
+  margin-bottom: 20px;
+}
+.about p {
+  color: #ccc;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #0d0d0d;
+  padding: 20px;
+  font-size: 0.9em;
+  color: #bbb;
+}

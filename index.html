@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Editkaro.in | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Editkaro<span>.in</span></div>
+    <nav>
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#categories">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h1>Transforming Ideas into Stunning Visuals</h1>
+    <p>Explore our best video editing works — from anime to ads, we bring creativity to life.</p>
+    <a href="#categories" class="btn">Explore Portfolio</a>
+  </section>
+
+  <section id="categories" class="portfolio">
+    <h2>Our Works</h2>
+
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="short">Short Form</button>
+      <button class="filter-btn" data-category="long">Long Form</button>
+      <button class="filter-btn" data-category="gaming">Gaming</button>
+      <button class="filter-btn" data-category="ads">Ads</button>
+    </div>
+
+    <div class="video-gallery">
+      <!-- Short form -->
+      <div class="video-card" data-category="short">
+        <video src="shortReel.mp4" muted loop></video>
+        <h3>Short Reel Edit</h3>
+      </div>
+
+      <!-- Long form -->
+      <div class="video-card" data-category="long">
+        <video src="istockphoto-950156506-640_adpp_is.mp4" muted loop></video>
+        <h3>Cinematic Edit</h3>
+      </div>
+
+      <!-- Gaming -->
+      <div class="video-card" data-category="gaming">
+        <video src="istockphoto-1334829242-640_adpp_is.mp4" muted loop></video>
+        <h3>Gaming Montage</h3>
+      </div>
+
+      <!-- Ads -->
+      <div class="video-card" data-category="ads">
+        <video src="istockphoto-866406672-640_adpp_is.mp4" muted loop></video>
+        <h3>Ad Campaign</h3>
+      </div>
+
+      <!-- Another Short -->
+      <div class="video-card" data-category="short">
+        <video src="istockphoto-1481379129-640_adpp_is.mp4" muted loop></video>
+        <h3>Travel Edit</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Editkaro.in</h2>
+    <p>
+      We are a creative media agency specializing in <strong>video editing</strong>, 
+      <strong>social media marketing</strong>, and <strong>content creation</strong>.  
+      Our passion lies in storytelling through visuals — from short reels to cinematic edits.
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 Editkaro.in | Designed by <strong>Anshika Sharma</strong></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
